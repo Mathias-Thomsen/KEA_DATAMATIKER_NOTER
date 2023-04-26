@@ -53,7 +53,7 @@ name: Merge Conflict Check
 on:
   push:
     branches:
-      - '**'
+      - 'issue/*'
 
 jobs:
   merge-conflict-check:
