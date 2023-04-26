@@ -112,13 +112,13 @@ This YAML file defines a GitHub Actions workflow named Build and push test that 
 
 Here's a breakdown of the workflow:
 
-    The on key specifies that the workflow should be triggered on the push event.
-    The jobs key defines a single job named maven that runs on an ubuntu-latest virtual machine.
-    The uses key in the first step downloads the latest version of the repository using the actions/checkout action.
-    The run key in the second step outputs the current working directory, a list of the files in the directory, and the environment variables that are available to the job.
-    The uses key in the third step sets up the Java environment using the actions/setup-java action.
-    The run key in the fourth step runs the Maven build in batch mode with the --update-snapshots option and the package goal to compile and package the project.
-    The run key in the fifth step runs the Maven verify phase in batch mode with the --update-snapshots option to verify the build.
+* The `on` key specifies that the workflow should be triggered on the push event.
+* The `jobs` key defines a single job named maven that runs on an ubuntu-latest virtual machine.
+* The `uses` key in the first step downloads the latest version of the repository using the actions/checkout action.
+* The `run` key in the second step outputs the current working directory, a list of the files in the directory, and the environment variables that are available to the job.
+* The `uses` key in the third step sets up the Java environment using the actions/setup-java action.
+* The `run` key in the fourth step runs the Maven build in batch mode with the --update-snapshots option and the package goal to compile and package the project.
+* The `run` key in the fifth step runs the Maven verify phase in batch mode with the --update-snapshots option to verify the build.
 
 Overall, this workflow sets up a basic Maven build and test environment using GitHub Actions. You can customize it further to suit your specific project requirements.
 
