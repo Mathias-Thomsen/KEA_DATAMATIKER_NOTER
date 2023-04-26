@@ -1,6 +1,6 @@
 # Yaml files 
 
-## Ymal file for merge check 
+## Yaml file for merge check 
 
 
 ```
